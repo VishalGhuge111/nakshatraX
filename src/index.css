@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* NakshatraX Space-Themed Design System 
+All colors MUST be HSL. Space-inspired with neon accents.
+*/
+
+@layer base {
+  :root {
+    /* Space Theme - Deep Space Black/Navy */
+    --background: 220 25% 6%;
+    --foreground: 210 40% 95%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Neon Cyan Primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 25% 6%;
+    --primary-glow: 180 100% 60%;
+
+    /* Deep Blue Secondary */
+    --secondary: 240 50% 15%;
+    --secondary-foreground: 210 40% 95%;
+
+    /* Muted Space Gray */
+    --muted: 220 15% 12%;
+    --muted-foreground: 210 20% 65%;
+
+    /* Purple Accent */
+    --accent: 270 60% 50%;
+    --accent-foreground: 210 40% 95%;
+
+    /* Red Alert */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 210 40% 95%;
+
+    /* Border & Input */
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 180 100% 50%;
+
+    /* Custom Space Colors */
+    --space-gold: 45 100% 60%;
+    --space-purple: 270 60% 50%;
+    --space-green: 120 60% 45%;
+    --nebula: 300 70% 40%;
+
+    /* Gradients */
+    --gradient-space: linear-gradient(135deg, hsl(220 25% 6%), hsl(240 30% 12%));
+    --gradient-neon: linear-gradient(90deg, hsl(180 100% 50%), hsl(270 60% 50%));
+    --gradient-hero: linear-gradient(45deg, hsl(220 25% 6%) 0%, hsl(240 50% 15%) 50%, hsl(270 60% 20%) 100%);
+
+    /* Shadows & Effects */
+    --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.4);
+    --shadow-glow: 0 0 40px hsl(180 100% 50% / 0.2);
+    --shadow-card: 0 10px 30px hsl(220 25% 3% / 0.5);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light theme not used - space is dark! */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    background: var(--gradient-space);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer components {
+  /* Starfield background animation */
+  .starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: 
+      radial-gradient(2px 2px at 20px 30px, white, transparent),
+      radial-gradient(2px 2px at 40px 70px, white, transparent),
+      radial-gradient(1px 1px at 90px 40px, white, transparent),
+      radial-gradient(1px 1px at 130px 80px, white, transparent),
+      radial-gradient(2px 2px at 160px 30px, white, transparent);
+    background-size: 200px 100px;
+    animation: sparkle 10s linear infinite;
+  }
+
+  @keyframes sparkle {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-100px); }
+  }
+
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .neon-text {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  /* Hero button variant */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-primary-glow;
+    box-shadow: var(--shadow-neon);
+    transition: all 0.3s ease;
+  }
+
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Space card styling */
+  .space-card {
+    @apply bg-card border border-border rounded-lg p-6;
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border));
+  }
+
+  /* Mission control styling */
+  .mission-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border));
+  }
+}
