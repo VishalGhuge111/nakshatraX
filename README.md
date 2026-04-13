@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# 🚀 NakshatraX
 
-## Project info
+<p align="center">
+  <img src="./public/logo.png" alt="NakshatraX Logo" width="120" />
+</p>
 
-**URL**: https://lovable.dev/projects/34538424-f7ed-4bce-867f-6cd670a9669d
+<h1 align="center">NakshatraX</h1>
+<p align="center"><b>Interactive Space Mission Simulation Platform</b></p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌌 Live Demo
 
-**Use Lovable**
+**[Launch NakshatraX](https://nakshatra-x.vercel.app/)**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/34538424-f7ed-4bce-867f-6cd670a9669d) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Overview
 
-**Use your preferred IDE**
+NakshatraX is an interactive 3D space mission simulator that brings orbital mechanics and space exploration to your browser. Combining NASA mission control aesthetics with modern space simulation gameplay, the platform offers real-time solar system visualization, comet tracking, and free-roam flight simulation.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🎯 Features
 
-Follow these steps:
+### 🌍 3D Solar System Simulation
+- Real-time planetary orbits with accurate orbital mechanics
+- Interactive camera controls with zoom and rotation
+- Scientifically accurate scale representations
+- Smooth animations powered by Three.js
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🛸 Mission Control Center
+- Rocket selection interface with detailed specifications
+- Real-time mission statistics and telemetry
+- Success/failure state tracking
+- Mission planning with trajectory calculations
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ☄️ Atlas Comet Tracking
+- Hyperbolic trajectory visualization for interstellar object 3I/ATLAS
+- Orbital path prediction and intercept planning
+- Real-time position tracking
+- Educational content about comet mechanics
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🎮 Free-Roam Flight Simulator
+- WASD keyboard controls for spacecraft navigation
+- Unlimited exploration of solar system
+- First-person perspective flight
+- Realistic physics-based movement
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### 🏆 Gamification System
+- Mission scoring and achievement tracking
+- Leaderboard with player rankings
+- Challenge-based progression
+- Performance metrics and analytics
+
+### 📚 Educational Content
+- Space science tutorials and guides
+- Orbital mechanics explanations
+- Mission planning fundamentals
+- Interactive learning modules
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18** - UI component library
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Three.js** - 3D graphics rendering
+- **React Three Fiber** - React renderer for Three.js
+- **Framer Motion** - Animation library
+- **Tailwind CSS** - Utility-first styling
+- **React Router** - Client-side routing
+
+---
+
+## 🎨 Design System
+
+### Color Palette
+- **Background**: Deep navy (#0a0e27) and black (#000000)
+- **Primary**: Neon cyan (#00d9ff)
+- **Secondary**: Electric purple (#9333ea)
+- **Accent**: Vibrant orange (#ff6b35)
+
+### Typography
+- **Headers**: Orbitron (space-inspired geometric font)
+- **Body**: Inter (clean, readable sans-serif)
+
+### Visual Effects
+- Animated starfield backgrounds
+- Glowing neon elements
+- Particle systems
+- Smooth transitions and animations
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+```bash
+   git clone https://github.com/VishalGhuge111/NakshatraX.git
+   cd NakshatraX
 ```
 
-**Edit a file directly in GitHub**
+2. **Install dependencies**
+```bash
+   npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **Run development server**
+```bash
+   npm run dev
+```
 
-**Use GitHub Codespaces**
+4. **Open in browser**
+   
+   Navigate to [http://localhost:5173](http://localhost:5173)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/34538424-f7ed-4bce-867f-6cd670a9669d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📁 Project Structure
