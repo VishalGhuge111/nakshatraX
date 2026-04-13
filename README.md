@@ -128,11 +128,14 @@ NakshatraX is an interactive 3D space mission simulator that brings orbital mech
 
 ## 📁 Project Structure
 
+```
 nakshatraX-main/
+│
 ├── public/
 │   ├── favicon.png
 │   ├── placeholder.svg
 │   └── robots.txt
+│
 ├── src/
 │   ├── App.css
 │   ├── App.tsx
@@ -210,6 +213,7 @@ nakshatraX-main/
 │       ├── Missions.tsx
 │       ├── NotFound.tsx
 │       └── Simulator.tsx
+│
 ├── .gitignore
 ├── bun.lockb
 ├── components.json
@@ -223,6 +227,7 @@ nakshatraX-main/
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+```
 
 ---
 
